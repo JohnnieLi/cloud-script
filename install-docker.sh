@@ -21,4 +21,7 @@ sudo yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Pac
 echo "install docker-ce"
 sudo yum install -y docker-ce docker-ce-cli containerd.io
 echo "start docker service"
+
+sudo systemctl enable docker
+
 sudo systemctl start docker
